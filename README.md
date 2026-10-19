@@ -7,6 +7,13 @@ One-command installer for the **Trilogy research software mirrors** —
 so humans and AI agents can get them working without the setup hazards
 (system-Python blocks, tiny `/tmp` build dirs, transient network retries).
 
+## Requirements
+
+- Python 3.10+ and `git`.
+- A stable network connection: `maf` and `cfhm` depend on `torch`
+  (~526 MB wheel), so the venv downloads ~700 MB total on first install.
+- ~1 GB free disk for the venv.
+
 ## Install
 
 ```bash

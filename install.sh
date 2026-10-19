@@ -30,7 +30,8 @@ fi
 
 "$VENV_DIR/bin/pip" install --quiet --upgrade pip
 echo "Installing Trilogy packages (pinned commits) ..."
-"$VENV_DIR/bin/pip" install -r "$SCRIPT_DIR/requirements.txt"
+# --resume-retries: maf/cfhm pull torch (~526 MB); survive flaky networks.
+"$VENV_DIR/bin/pip" install --resume-retries 10 -r "$SCRIPT_DIR/requirements.txt"
 
 echo "Verifying ..."
 "$VENV_DIR/bin/python" "$SCRIPT_DIR/verify.py"
