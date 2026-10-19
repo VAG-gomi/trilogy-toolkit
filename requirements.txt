@@ -1,0 +1,6 @@
+# Trilogy research software mirrors — pinned 2026-10-19 for reproducibility.
+# Verified importable as: cfhm 0.1.0, maf 1.1.1, lhe 0.1.1.
+# For latest main instead of pinned commits, drop the @<sha> suffix.
+cfhm @ git+https://github.com/VAG-gomi/cfhm-software.git@497a21057a9b041ce61891f86e5e7638506cbf64
+maf @ git+https://github.com/VAG-gomi/maf-software.git@5e6a021d1f81997aa8e824eaf6584471d28546f3
+lhe @ git+https://github.com/VAG-gomi/lhe-software.git@ecf3846d64d948b4a53cc8d224d25d10de11d9ed
